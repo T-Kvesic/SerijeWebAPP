@@ -32,10 +32,13 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="PotrebnoVrijeme" class="control-label"></label>
-                <input asp-for="PotrebnoVrijeme" class="form-control" />
+                <label asp-for="PotrebnoVrijeme" class="control-label">Potrebno vrijeme (u satima)</label>
+                <div class="input-group">
+                    <input asp-for="PotrebnoVrijeme" class="form-control" type="number" step="1" />
+                </div>
                 <span asp-validation-for="PotrebnoVrijeme" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Preporuka" class="control-label"></label>
                 <input asp-for="Preporuka" class="form-control" />
